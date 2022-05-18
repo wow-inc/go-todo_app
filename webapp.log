@@ -1,1 +1,2 @@
 2022/05/18 15:36:28 main.go:15: test
+2022/05/18 15:59:35 base.go:28: sql: unknown driver "splite3" (forgotten import?)

@@ -1,11 +1,13 @@
 package models
 
 import (
+	"crypto/sha1"
 	"database/sql"
 	"fmt"
 	"log"
 	"todo_app_go/config"
 
+	"github.com/google/uuid"
 	_ "github.com/mattn/go-sqlite3"
 )
 
@@ -22,7 +24,7 @@ const (
 )
 
 func init() {
-	Db, err := sql.Open(config.Config.SQLDriver, config.Config.DbName)
+	Db, err = sql.Open(config.Config.SQLDriver, config.Config.DbName)
 
 	if err != nil {
 		log.Fatalln(err)
@@ -38,4 +40,15 @@ func init() {
 	)`, tableNameUser)
 
 	Db.Exec(cmdU)
+
+}
+
+func createUUID() (uuidobj uuid.UUID) {
+	uuidobj, _ = uuid.NewUUID()
+	return uuidobj
+}
+
+func Encrypt(plantext string) (cryptext string) {
+	cryptext = fmt.Sprintf("%x", sha1.Sum([]byte(plantext)))
+	return cryptext
 }

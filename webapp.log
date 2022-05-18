@@ -1,2 +1,3 @@
 2022/05/18 15:36:28 main.go:15: test
 2022/05/18 15:59:35 base.go:28: sql: unknown driver "splite3" (forgotten import?)
+2022/05/18 22:47:38 users.go:31: sql: converting argument $5 type: unsupported type func() time.Time, a func

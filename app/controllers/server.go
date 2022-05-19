@@ -1,6 +1,8 @@
 package controllers
 
 import (
+	"fmt"
+	"html/template"
 	"net/http"
 	"todo_app_go/config"
 )
@@ -10,4 +12,14 @@ func StartMainServer() error {
 	http.Handle("/static/", http.StripPrefix("/static/", files))
 	http.HandleFunc("/", top)
 	return http.ListenAndServe(":"+config.Config.Port, nil)
+}
+
+func GeneratHTML(w http.ResponseWriter, data interface{}, filenames ...string) {
+	var files []string
+	for _, file := range filenames {
+		files = append(files, fmt.Sprintf("app/views/templates/%s.html", file))
+	}
+
+	templates := template.Must(template.ParseFiles(files...))
+	templates.ExecuteTemplate(w, "layout", data)
 }

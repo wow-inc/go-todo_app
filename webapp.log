@@ -134,3 +134,531 @@ net/http.(*conn).serve(0x1400009e280, {0x1053cd2c8, 0x1400007f530})
 	/usr/local/go/src/net/http/server.go:1966 +0x56c
 created by net/http.(*Server).Serve
 	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:08:43 server.go:3197: http: panic serving [::1]:52768: template: layout.html:14: function "templates" not defined
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x105321140, 0x14000090070})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x10537eba0?, 0x140001640e0}, {0x105311780, 0x10537c2f0}, {0x140001199d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x10537eba0?, 0x140001640e0?}, 0x14000119a3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10537eba0?, 0x140001640e0?}, 0x104e45e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10537eba0, 0x140001640e0}, 0x140001a2000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400018e030?}, {0x10537eba0, 0x140001640e0}, 0x140001a2000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117360, {0x10537ee58, 0x1400007f560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:08:43 server.go:3197: http: panic serving [::1]:52769: template: layout.html:14: function "templates" not defined
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x105321140, 0x14000090160})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x10537eba0?, 0x140000de000}, {0x105311780, 0x10537c2f0}, {0x1400005a9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x10537eba0?, 0x140000de000?}, 0x1400005aa3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10537eba0?, 0x140000de000?}, 0x104e45e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10537eba0, 0x140000de000}, 0x140001a2100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007f6b0?}, {0x10537eba0, 0x140000de000}, 0x140001a2100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117400, {0x10537ee58, 0x1400007f560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:08:43 server.go:3197: http: panic serving [::1]:52770: template: layout.html:14: function "templates" not defined
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x105321140, 0x14000090260})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x10537eba0?, 0x140000de0e0}, {0x105311780, 0x10537c2f0}, {0x1400005a9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x10537eba0?, 0x140000de0e0?}, 0x1400005aa3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10537eba0?, 0x140000de0e0?}, 0x104e45e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10537eba0, 0x140000de0e0}, 0x140000fc000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000096570?}, {0x10537eba0, 0x140000de0e0}, 0x140000fc000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000fa000, {0x10537ee58, 0x1400007f560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:08:44 server.go:3197: http: panic serving [::1]:52775: template: layout.html:14: function "templates" not defined
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x105321140, 0x14000013140})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x10537eba0?, 0x140000de1c0}, {0x105311780, 0x10537c2f0}, {0x1400005b9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x10537eba0?, 0x140000de1c0?}, 0x1400005ba3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10537eba0?, 0x140000de1c0?}, 0x104e45e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10537eba0, 0x140000de1c0}, 0x140000fc200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000096ab0?}, {0x10537eba0, 0x140000de1c0}, 0x140000fc200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000fa0a0, {0x10537ee58, 0x1400007f560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:08:44 server.go:3197: http: panic serving [::1]:52776: template: layout.html:14: function "templates" not defined
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x105321140, 0x14000013230})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x10537eba0?, 0x140001641c0}, {0x105311780, 0x10537c2f0}, {0x1400005a9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x10537eba0?, 0x140001641c0?}, 0x1400005aa3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10537eba0?, 0x140001641c0?}, 0x104e45e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10537eba0, 0x140001641c0}, 0x140000fc100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000096a50?}, {0x10537eba0, 0x140001641c0}, 0x140000fc100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000fa140, {0x10537ee58, 0x1400007f560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:08:44 server.go:3197: http: panic serving [::1]:52777: template: layout.html:14: function "templates" not defined
+goroutine 11 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x105321140, 0x140000903f0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x10537eba0?, 0x140000de2a0}, {0x105311780, 0x10537c2f0}, {0x1400005a9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x10537eba0?, 0x140000de2a0?}, 0x1400005aa3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10537eba0?, 0x140000de2a0?}, 0x104e45e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10537eba0, 0x140000de2a0}, 0x1400015a100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400007ff80?}, {0x10537eba0, 0x140000de2a0}, 0x1400015a100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001174a0, {0x10537ee58, 0x1400007f560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:08:45 server.go:3197: http: panic serving [::1]:52778: template: layout.html:14: function "templates" not defined
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x105321140, 0x140001920f0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x10537eba0?, 0x140001c4000}, {0x105311780, 0x10537c2f0}, {0x1400011b9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x10537eba0?, 0x140001c4000?}, 0x1400005aa3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10537eba0?, 0x140001c4000?}, 0x104e45e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10537eba0, 0x140001c4000}, 0x140000fc300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000097230?}, {0x10537eba0, 0x140001c4000}, 0x140000fc300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001aa000, {0x10537ee58, 0x1400007f560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:08:45 server.go:3197: http: panic serving [::1]:52779: template: layout.html:14: function "templates" not defined
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x105321140, 0x14000090470})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x10537eba0?, 0x140001642a0}, {0x105311780, 0x10537c2f0}, {0x140001879d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x10537eba0?, 0x140001642a0?}, 0x14000187a3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10537eba0?, 0x140001642a0?}, 0x104e45e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10537eba0, 0x140001642a0}, 0x140001a2200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400018e1e0?}, {0x10537eba0, 0x140001642a0}, 0x140001a2200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001aa0a0, {0x10537ee58, 0x1400007f560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:08:45 server.go:3197: http: panic serving [::1]:52780: template: layout.html:14: function "templates" not defined
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x105321140, 0x14000192160})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x10537eba0?, 0x14000164380}, {0x105311780, 0x10537c2f0}, {0x140001879d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x10537eba0?, 0x14000164380?}, 0x14000187a3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10537eba0?, 0x14000164380?}, 0x104e45e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10537eba0, 0x14000164380}, 0x1400015a200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000248360?}, {0x10537eba0, 0x14000164380}, 0x1400015a200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117540, {0x10537ee58, 0x1400007f560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:08:50 server.go:3197: http: panic serving [::1]:52801: template: layout.html:14: function "templates" not defined
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x105321140, 0x140000904e0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x10537eba0?, 0x14000164460}, {0x105311780, 0x10537c2f0}, {0x1400005a9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x10537eba0?, 0x14000164460?}, 0x1400005aa3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10537eba0?, 0x14000164460?}, 0x104e45e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10537eba0, 0x14000164460}, 0x140001a2400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400018e720?}, {0x10537eba0, 0x14000164460}, 0x140001a2400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001175e0, {0x10537ee58, 0x1400007f560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:08:50 server.go:3197: http: panic serving [::1]:52802: template: layout.html:14: function "templates" not defined
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x105321140, 0x140000905d0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x10537eba0?, 0x140000de380}, {0x105311780, 0x10537c2f0}, {0x140001879d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x10537eba0?, 0x140000de380?}, 0x14000187a3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10537eba0?, 0x140000de380?}, 0x104e45e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10537eba0, 0x140000de380}, 0x1400015a300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000248780?}, {0x10537eba0, 0x140000de380}, 0x1400015a300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117680, {0x10537ee58, 0x1400007f560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:08:50 server.go:3197: http: panic serving [::1]:52803: template: layout.html:14: function "templates" not defined
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x105321140, 0x140001921e0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x10537eba0?, 0x14000164540}, {0x105311780, 0x10537c2f0}, {0x1400005a9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x10537eba0?, 0x14000164540?}, 0x1400005aa3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x10537eba0?, 0x14000164540?}, 0x104e45e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x10537eba0, 0x14000164540}, 0x1400015a400)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000248b40?}, {0x10537eba0, 0x14000164540}, 0x1400015a400)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000117720, {0x10537ee58, 0x1400007f560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:09:14 server.go:3197: http: panic serving [::1]:52903: template: layout.html:14: function "templates" not defined
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1049a1140, 0x1400021e0d0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x1049feba0?, 0x14000222000}, {0x104991780, 0x1049fc2f0}, {0x140000b79d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x1049feba0?, 0x14000222000?}, 0x1400005ba3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1049feba0?, 0x14000222000?}, 0x1044c5e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1049feba0, 0x14000222000}, 0x14000202000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000116030?}, {0x1049feba0, 0x14000222000}, 0x14000202000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000b5360, {0x1049fee58, 0x1400009b560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:09:14 server.go:3197: http: panic serving [::1]:52904: template: layout.html:14: function "templates" not defined
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1049a1140, 0x1400021e1c0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x1049feba0?, 0x140002220e0}, {0x104991780, 0x1049fc2f0}, {0x140000bd9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x1049feba0?, 0x140002220e0?}, 0x140000bda3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1049feba0?, 0x140002220e0?}, 0x1044c5e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1049feba0, 0x140002220e0}, 0x14000188100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009b6b0?}, {0x1049feba0, 0x140002220e0}, 0x14000188100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000b5400, {0x1049fee58, 0x1400009b560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:09:14 server.go:3197: http: panic serving [::1]:52905: template: layout.html:14: function "templates" not defined
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1049a1140, 0x1400011a060})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x1049feba0?, 0x140001920e0}, {0x104991780, 0x1049fc2f0}, {0x1400005f9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x1049feba0?, 0x140001920e0?}, 0x1400005fa3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1049feba0?, 0x140001920e0?}, 0x1044c5e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1049feba0, 0x140001920e0}, 0x14000188200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009b7d0?}, {0x1049feba0, 0x140001920e0}, 0x14000188200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000b54a0, {0x1049fee58, 0x1400009b560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:09:44 server.go:3197: http: panic serving [::1]:53026: template: top.html:4: function "content" not defined
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1049a1140, 0x14000099240})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x1049feba0?, 0x140001921c0}, {0x104991780, 0x1049fc2f0}, {0x1400005f9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x1049feba0?, 0x140001921c0?}, 0x1400005fa3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1049feba0?, 0x140001921c0?}, 0x1044c5e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1049feba0, 0x140001921c0}, 0x14000188300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400009bb30?}, {0x1049feba0, 0x140001921c0}, 0x14000188300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000144000, {0x1049fee58, 0x1400009b560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:09:44 server.go:3197: http: panic serving [::1]:53027: template: top.html:4: function "content" not defined
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1049a1140, 0x140000993a0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x1049feba0?, 0x140001922a0}, {0x104991780, 0x1049fc2f0}, {0x1400005c9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x1049feba0?, 0x140001922a0?}, 0x1400005ca3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1049feba0?, 0x140001922a0?}, 0x1044c5e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1049feba0, 0x140001922a0}, 0x14000148000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000116240?}, {0x1049feba0, 0x140001922a0}, 0x14000148000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001440a0, {0x1049fee58, 0x1400009b560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:09:44 server.go:3197: http: panic serving [::1]:53028: template: top.html:4: function "content" not defined
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x1049a1140, 0x1400011a150})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x1049feba0?, 0x140002221c0}, {0x104991780, 0x1049fc2f0}, {0x1400005b9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x1049feba0?, 0x140002221c0?}, 0x1400005ba3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1049feba0?, 0x140002221c0?}, 0x1044c5e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1049feba0, 0x140002221c0}, 0x14000202100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000200840?}, {0x1049feba0, 0x140002221c0}, 0x14000202100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x1400026c000, {0x1049fee58, 0x1400009b560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:09:52 server.go:3197: http: panic serving [::1]:53064: template: top.html:4: function "content" not defined
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x10298d140, 0x14000098150})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x1029eaba0?, 0x140000b2000}, {0x10297d780, 0x1029e82f0}, {0x140001399d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x1029eaba0?, 0x140000b2000?}, 0x1400005ba3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1029eaba0?, 0x140000b2000?}, 0x1024b1e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1029eaba0, 0x140000b2000}, 0x14000188200)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000094030?}, {0x1029eaba0, 0x140000b2000}, 0x14000188200)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000137400, {0x1029eae58, 0x1400011d560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:09:52 server.go:3197: http: panic serving [::1]:53065: template: top.html:4: function "content" not defined
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x10298d140, 0x140000982b0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x1029eaba0?, 0x140000b20e0}, {0x10297d780, 0x1029e82f0}, {0x1400013f9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x1029eaba0?, 0x140000b20e0?}, 0x1400013fa3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1029eaba0?, 0x140000b20e0?}, 0x1024b1e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1029eaba0, 0x140000b20e0}, 0x14000188100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400011d6b0?}, {0x1029eaba0, 0x140000b20e0}, 0x14000188100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140001374a0, {0x1029eae58, 0x1400011d560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:09:52 server.go:3197: http: panic serving [::1]:53066: template: top.html:4: function "content" not defined
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x10298d140, 0x14000012080})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x1029eaba0?, 0x140001920e0}, {0x10297d780, 0x1029e82f0}, {0x1400005f9d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x1029eaba0?, 0x140001920e0?}, 0x1400005fa3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1029eaba0?, 0x140001920e0?}, 0x1024b1e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1029eaba0, 0x140001920e0}, 0x14000188300)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x1400011d800?}, {0x1029eaba0, 0x140001920e0}, 0x14000188300)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000137540, {0x1029eae58, 0x1400011d560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:10:52 server.go:3197: http: panic serving [::1]:53312: template: top.html:4: function "content" not defined
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x10298d140, 0x14000098410})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x1029eaba0?, 0x140000b21c0}, {0x10297d780, 0x1029e82f0}, {0x140000619d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x1029eaba0?, 0x140000b21c0?}, 0x14000061a3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1029eaba0?, 0x140000b21c0?}, 0x1024b1e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1029eaba0, 0x140000b21c0}, 0x14000224100)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000076210?}, {0x1029eaba0, 0x140000b21c0}, 0x14000224100)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x14000222000, {0x1029eae58, 0x1400011d560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:10:52 server.go:3197: http: panic serving [::1]:53313: template: top.html:4: function "content" not defined
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x10298d140, 0x14000098570})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x1029eaba0?, 0x140000b22a0}, {0x10297d780, 0x1029e82f0}, {0x140000609d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x1029eaba0?, 0x140000b22a0?}, 0x14000060a3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1029eaba0?, 0x140000b22a0?}, 0x1024b1e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1029eaba0, 0x140000b22a0}, 0x14000224000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x14000076180?}, {0x1029eaba0, 0x140000b22a0}, 0x14000224000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140002220a0, {0x1029eae58, 0x1400011d560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/20 00:10:52 server.go:3197: http: panic serving [::1]:53314: template: top.html:4: function "content" not defined
+goroutine 46 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xb0
+panic({0x10298d140, 0x140000986e0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:374
+todo_app_go/app/controllers.GeneratHTML({0x1029eaba0?, 0x140000b2380}, {0x10297d780, 0x1029e82f0}, {0x140000609d8?, 0x2, 0x800?})
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/server.go:23 +0xd0
+todo_app_go/app/controllers.top({0x1029eaba0?, 0x140000b2380?}, 0x14000060a3b?)
+	/Users/keisukeyoshida/wow/todo_app_go/app/controllers/route_main.go:8 +0x74
+net/http.HandlerFunc.ServeHTTP(0x72?, {0x1029eaba0?, 0x140000b2380?}, 0x1024b1e20?)
+	/usr/local/go/src/net/http/server.go:2084 +0x3c
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x1029eaba0, 0x140000b2380}, 0x140000fe000)
+	/usr/local/go/src/net/http/server.go:2462 +0x144
+net/http.serverHandler.ServeHTTP({0x140000958c0?}, {0x1029eaba0, 0x140000b2380}, 0x140000fe000)
+	/usr/local/go/src/net/http/server.go:2916 +0x3fc
+net/http.(*conn).serve(0x140000fc000, {0x1029eae58, 0x1400011d560})
+	/usr/local/go/src/net/http/server.go:1966 +0x56c
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x450

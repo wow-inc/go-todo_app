@@ -3,7 +3,6 @@ package controllers
 import (
 	"fmt"
 	"html/template"
-	"log"
 	"net/http"
 	"regexp"
 	"strconv"
@@ -37,14 +36,11 @@ func session(w http.ResponseWriter, r *http.Request) (sess models.Session, err e
 	return sess, err
 }
 
-var validPath = regexp.MustCompile("^/todos/(edit|update)/([0-9]+)$")
+var validPath = regexp.MustCompile("^/todos/(edit|update|delete)/([0-9]+)$")
 
 func ParseURL(fn func(http.ResponseWriter, *http.Request, int)) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		// todos/edit/1
-		log.Println("r.URL.Path")
-		log.Println(r.URL.Path)
-		log.Println("r.URL.Path")
 		q := validPath.FindStringSubmatch(r.URL.Path)
 		if q == nil {
 			http.NotFound(w, r)
@@ -74,5 +70,6 @@ func StartMainServer() error {
 	http.HandleFunc("/todos/save", todoSave)
 	http.HandleFunc("/todos/edit/", ParseURL(todoEdit))
 	http.HandleFunc("/todos/update/", ParseURL(todoUpdate))
+	http.HandleFunc("/todos/delete/", ParseURL(todoDelete))
 	return http.ListenAndServe(":"+config.Config.Port, nil)
 }

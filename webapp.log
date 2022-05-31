@@ -1480,3 +1480,28 @@ created by net/http.(*Server).Serve
 2022/05/31 12:48:11 route_main.go:25: sql: expected 5 destination arguments in Scan, not 4
 2022/05/31 12:49:46 route_main.go:25: sql: expected 5 destination arguments in Scan, not 4
 2022/05/31 12:49:46 route_main.go:25: sql: expected 5 destination arguments in Scan, not 4
+2022/05/31 13:34:02 server.go:45: /todos/edit/{‌{.ID}}
+2022/05/31 13:34:31 server.go:45: r.URL.Path
+2022/05/31 13:34:31 server.go:46: /todos/edit/{‌{.ID}}
+2022/05/31 13:34:31 server.go:47: r.URL.Path
+2022/05/31 13:35:12 server.go:45: r.URL.Path
+2022/05/31 13:35:12 server.go:46: /todos/edit/1
+2022/05/31 13:35:12 server.go:47: r.URL.Path
+2022/05/31 13:35:36 server.go:45: r.URL.Path
+2022/05/31 13:35:36 server.go:46: /todos/edit/1
+2022/05/31 13:35:36 server.go:47: r.URL.Path
+2022/05/31 13:35:40 server.go:45: r.URL.Path
+2022/05/31 13:35:40 server.go:46: /todos/edit/2
+2022/05/31 13:35:40 server.go:47: r.URL.Path
+2022/05/31 13:36:24 server.go:45: r.URL.Path
+2022/05/31 13:36:24 server.go:46: /todos/edit/1
+2022/05/31 13:36:24 server.go:47: r.URL.Path
+2022/05/31 13:42:13 server.go:45: r.URL.Path
+2022/05/31 13:42:13 server.go:46: /todos/edit/1
+2022/05/31 13:42:13 server.go:47: r.URL.Path
+2022/05/31 13:42:22 server.go:45: r.URL.Path
+2022/05/31 13:42:22 server.go:46: /todos/edit/1
+2022/05/31 13:42:22 server.go:47: r.URL.Path
+2022/05/31 13:42:30 server.go:45: r.URL.Path
+2022/05/31 13:42:30 server.go:46: /todos/update/1
+2022/05/31 13:42:30 server.go:47: r.URL.Path

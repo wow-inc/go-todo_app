@@ -1190,3 +1190,6 @@ net/http.(*conn).serve(0x140000f43c0, {0x1047b0138, 0x1400011d560})
 	/usr/local/go/src/net/http/server.go:1966 +0x56c
 created by net/http.(*Server).Serve
 	/usr/local/go/src/net/http/server.go:3071 +0x450
+2022/05/31 08:56:48 main.go:20: near "amd": syntax error
+2022/05/31 08:57:05 main.go:20: sql: expected 5 destination arguments in Scan, not 4
+2022/05/31 09:29:26 users.go:139: no such table: sessinos
